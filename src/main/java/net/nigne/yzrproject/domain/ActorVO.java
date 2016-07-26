@@ -15,25 +15,35 @@ public class ActorVO {
 	@GeneratedValue(generator="NoSequence", strategy=GenerationType.SEQUENCE)
 	@SequenceGenerator(name="NoSequence", sequenceName="ACTOR_NO_SEQ", allocationSize=1)
 	@Column(name="no")
-	int no;
+	private int no;
 	
 	@Column(name="movie_id")
-	String movie_id;
+	private String movie_id;
 	
 	@Column(name="actor_name")
-	String actor_name;
+	private String actor_name;
 	
 	@Column(name="actor_age")
-	String actor_age;
+	private String actor_age;
 	
 	@Column(name="actor_photo")
-	String actor_photo;
+	private String actor_photo;
 	
 	@Column(name="actor_debut")
-	String actor_debut;
+	private String actor_debut;
 	
 	@Column(name="actor_company")
-	String actor_company;
+	private String actor_company;
+	
+	public ActorVO(String actor_name, String actor_age, String actor_photo){
+		setActor_name(actor_name);
+		setActor_age(actor_age);
+		setActor_photo(actor_photo);
+	}
+
+	public ActorVO() {
+		
+	}
 
 	public int getNo() {
 		return no;

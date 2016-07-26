@@ -10,37 +10,37 @@ import javax.persistence.Table;
 public class MovieVO {
 	@Id
 	@Column(name = "movie_id")
-	String movie_id;
+	private String movie_id;
 
 	@Column(name = "title")
-	String title;
+	private String title;
 
 	@Column(name = "open_date")
-	String open_date;
+	private String open_date;
 
 	@Column(name = "runtime")
-	int runtime;
+	private int runtime;
 
 	@Column(name = "rating")
-	String rating;
+	private String rating;
 
 	@Column(name = "moviegoers_cnt")
-	int moviegoers_cnt;
+	private int moviegoers_cnt;
 
 	@Column(name = "reservation_rate")
-	double reservation_rate;
+	private double reservation_rate;
 
 	@Column(name = "story")
-	String story;
+	private String story;
 
 	@Column(name = "site")
-	String site;
+	private String site;
 
 	@Column(name = "poster")
-	String poster;
+	private String poster;
 
 	@Column(name = "status")
-	String status;
+	private String status;
 	
 	public String getMovie_id() {
 		return movie_id;
