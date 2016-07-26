@@ -30,6 +30,7 @@ import org.hibernate.annotations.Formula;
 				  @SecondaryTable(name="director", pkJoinColumns=@PrimaryKeyJoinColumn(name="movie_id")),
 				  @SecondaryTable(name="genre", pkJoinColumns=@PrimaryKeyJoinColumn(name="movie_id"))})
 public class SearchVO {
+	
 	/*----------------Columns----------------*/
 	
 	/*-------------Movie Table---------------*/
